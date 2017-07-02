@@ -1,0 +1,304 @@
+hash: 4a97e7b9c5bdad01d28a4f0b542c421863ca59d4548184d4a56b283e392d5492
+updated: 2017-07-02T16:26:59.125708854+02:00
+imports:
+- name: github.com/beorn7/perks
+  version: 4c0e84591b9aa9e6dcfdf3e020114cd81f89d5f9
+  subpackages:
+  - quantile
+- name: github.com/boltdb/bolt
+  version: e72f08ddb5a52992c0a44c7dda9316c7333938b2
+- name: github.com/cloudflare/cfssl
+  version: 7fb22c8cba7ecaf98e4082d22d65800cf45e042a
+  subpackages:
+  - api
+  - auth
+  - certdb
+  - config
+  - crypto/pkcs7
+  - csr
+  - errors
+  - helpers
+  - helpers/derhelpers
+  - info
+  - initca
+  - log
+  - ocsp/config
+  - signer
+  - signer/local
+- name: github.com/coreos/etcd
+  version: ea5389a79f40206170582c1ea076191b8622cb8e
+  repo: https://github.com/aaronlehmann/etcd
+  subpackages:
+  - pkg/crc
+  - pkg/fileutil
+  - pkg/idutil
+  - pkg/ioutil
+  - pkg/pbutil
+  - raft
+  - raft/raftpb
+  - snap
+  - snap/snappb
+  - wal
+  - wal/walpb
+- name: github.com/coreos/go-systemd
+  version: 43e4800a6165b4e02bb2a36673c54b230d6f7b26
+  subpackages:
+  - journal
+- name: github.com/coreos/pkg
+  version: 3ac0863d7acf3bc44daf49afef8919af12f704ef
+  subpackages:
+  - capnslog
+- name: github.com/davecgh/go-spew
+  version: 5215b55f46b2b919f50a1df0eaa5886afe4e3b3d
+- name: github.com/docker/distribution
+  version: b38e5838b7b2f2ad48e06ec4b500011976080621
+  subpackages:
+  - digestset
+  - reference
+- name: github.com/docker/docker
+  version: 77c9728847358a3ed3581d828fb0753017e1afd3
+  subpackages:
+  - pkg/plugingetter
+  - pkg/plugins
+  - pkg/plugins/transport
+  - pkg/signal
+- name: github.com/docker/go-connections
+  version: 34b5052da6b11e27f5f2e357b38b571ddddd3928
+  subpackages:
+  - sockets
+  - tlsconfig
+- name: github.com/docker/go-events
+  version: 37d35add5005832485c0225ec870121b78fcff1c
+- name: github.com/docker/go-metrics
+  version: d466d4f6fd960e01820085bd7e1a24426ee7ef18
+- name: github.com/docker/go-units
+  version: 954fed01cc617c55d838fa2230073f2cb17386c8
+- name: github.com/docker/libkv
+  version: 9fd56606e928ff1f309808f5d5a0b7a2ef73f9a8
+  subpackages:
+  - store
+- name: github.com/docker/libnetwork
+  version: 37e20af882e13dd01ade3658b7aabdae3412118b
+  subpackages:
+  - bitseq
+  - datastore
+  - discoverapi
+  - driverapi
+  - drivers/bridge/brmanager
+  - drivers/host
+  - drivers/ipvlan/ivmanager
+  - drivers/macvlan/mvmanager
+  - drivers/overlay/ovmanager
+  - drivers/remote
+  - drivers/remote/api
+  - drvregistry
+  - idm
+  - ipam
+  - ipamapi
+  - ipams/builtin
+  - ipams/null
+  - ipams/remote
+  - ipams/remote/api
+  - ipams/windowsipam
+  - ipamutils
+  - netlabel
+  - types
+- name: github.com/docker/libtrust
+  version: 9cbd2a1374f46905c68a4eb3694a130610adc62a
+- name: github.com/docker/swarmkit
+  version: 1758d512365a007a2a2b8f68d629cb98b74ebd9f
+  subpackages:
+  - agent
+  - agent/configs
+  - agent/exec
+  - agent/secrets
+  - api
+  - api/deepcopy
+  - api/defaults
+  - api/equality
+  - api/genericresource
+  - api/naming
+  - ca
+  - cmd/swarmd/defaults
+  - connectionbroker
+  - identity
+  - ioutils
+  - log
+  - manager
+  - manager/allocator
+  - manager/allocator/cnmallocator
+  - manager/allocator/networkallocator
+  - manager/constraint
+  - manager/controlapi
+  - manager/dispatcher
+  - manager/dispatcher/heartbeat
+  - manager/encryption
+  - manager/health
+  - manager/keymanager
+  - manager/logbroker
+  - manager/metrics
+  - manager/orchestrator
+  - manager/orchestrator/constraintenforcer
+  - manager/orchestrator/global
+  - manager/orchestrator/replicated
+  - manager/orchestrator/restart
+  - manager/orchestrator/taskinit
+  - manager/orchestrator/taskreaper
+  - manager/orchestrator/update
+  - manager/raftselector
+  - manager/resourceapi
+  - manager/scheduler
+  - manager/state
+  - manager/state/raft
+  - manager/state/raft/membership
+  - manager/state/raft/storage
+  - manager/state/raft/transport
+  - manager/state/store
+  - manager/watchapi
+  - node
+  - protobuf/plugin
+  - protobuf/ptypes
+  - remotes
+  - template
+  - watch
+  - watch/queue
+  - xnet
+- name: github.com/dustin/go-humanize
+  version: 8929fe90cee4b2cb9deb468b51fb34eba64d1bf0
+- name: github.com/gogo/protobuf
+  version: 100ba4e885062801d56799d78530b73b178a78f3
+  subpackages:
+  - gogoproto
+  - proto
+  - protoc-gen-gogo/descriptor
+  - sortkeys
+  - types
+- name: github.com/golang/protobuf
+  version: 7a211bcf3bce0e3f1d74f9894916e6f116ae83b4
+  subpackages:
+  - proto
+  - ptypes/any
+- name: github.com/google/certificate-transparency
+  version: 0f6e3d1d1ba4d03fdaab7cd716f36255c2e48341
+  subpackages:
+  - go
+  - go/asn1
+  - go/client
+  - go/x509
+  - go/x509/pkix
+- name: github.com/grpc-ecosystem/go-grpc-prometheus
+  version: 6b7015e65d366bf3f19b2b2a000a831940f0f7e0
+- name: github.com/hashicorp/go-immutable-radix
+  version: 8e8ed81f8f0bf1bdd829593fdd5c29922c1ea990
+- name: github.com/hashicorp/go-memdb
+  version: cb9a474f84cc5e41b273b20c6927680b2a8776ad
+- name: github.com/hashicorp/golang-lru
+  version: a0d98a5f288019575c6d1f4bb1573fef2d1fcdc4
+  subpackages:
+  - simplelru
+- name: github.com/inconshreveable/mousetrap
+  version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
+- name: github.com/matttproud/golang_protobuf_extensions
+  version: 3247c84500bff8d9fb6d579d800f20b3e091582c
+  subpackages:
+  - pbutil
+- name: github.com/Microsoft/go-winio
+  version: f778f05015353be65d242f3fedc18695756153bb
+- name: github.com/opencontainers/go-digest
+  version: a6d0ee40d4207ea02364bd3b9e8e77b9159ba1eb
+- name: github.com/opencontainers/image-spec
+  version: f03dbe35d449c54915d235f1a3cf8f585a24babe
+- name: github.com/opencontainers/runc
+  version: b6b70e53451794e8333e9b602cc096b47a20bd0f
+  subpackages:
+  - libcontainer/user
+- name: github.com/phayes/permbits
+  version: f7e3ac5e859d0b919c5068d581cc4c5d4f4f9bc5
+- name: github.com/pivotal-golang/clock
+  version: 3fd3c1944c59d9742e1cd333672181cd1a6f9fa0
+- name: github.com/pkg/errors
+  version: 01fa4104b9c248c8945d14d9f128454d5b28d595
+- name: github.com/pmezard/go-difflib
+  version: 792786c7400a136282c1664665ae0a8db921c6c2
+- name: github.com/prometheus/client_golang
+  version: 52437c81da6b127a9925d17eb3a382a2e5fd395e
+  subpackages:
+  - prometheus
+- name: github.com/prometheus/client_model
+  version: fa8ad6fec33561be4280a8f0514318c79d7f6cb6
+  subpackages:
+  - go
+- name: github.com/prometheus/common
+  version: ebdfc6da46522d58825777cf1f90490a5b1ef1d8
+  subpackages:
+  - expfmt
+  - internal/bitbucket.org/ww/goautoneg
+  - model
+- name: github.com/prometheus/procfs
+  version: abf152e5f3e97f2fafac028d2cc06c1feb87ffa5
+- name: github.com/rcrowley/go-metrics
+  version: 51425a2415d21afadfd55cd93432c0bc69e9598d
+- name: github.com/Sirupsen/logrus
+  version: d26492970760ca5d33129d2d799e34be5c4782eb
+- name: github.com/spf13/cobra
+  version: 8e91712f174ced10270cf66615e0a9127e7c4de5
+- name: github.com/spf13/pflag
+  version: 7f60f83a2c81bc3c3c0d5297f61ddfa68da9d3b7
+- name: github.com/stretchr/testify
+  version: 69483b4bd14f5845b5a1e55bca19e954e827f1d0
+- name: golang.org/x/crypto
+  version: 3fbbcd23f1cb824e69491a5930cfeff09b12f4d2
+  subpackages:
+  - nacl/secretbox
+  - pkcs12
+  - pkcs12/internal/rc2
+  - poly1305
+  - salsa20/salsa
+- name: golang.org/x/net
+  version: 7dcfb8076726a3fdd9353b6b8a1f1b6be6811bd6
+  subpackages:
+  - context
+  - context/ctxhttp
+  - http2
+  - http2/hpack
+  - idna
+  - internal/timeseries
+  - lex/httplex
+  - proxy
+  - trace
+- name: golang.org/x/sys
+  version: 5eaf0df67e70d6997a9fe0ed24383fa1b01638d3
+  subpackages:
+  - unix
+- name: golang.org/x/text
+  version: f72d8390a633d5dfb0cc84043294db9f6c935756
+  subpackages:
+  - secure/bidirule
+  - transform
+  - unicode/bidi
+  - unicode/norm
+- name: golang.org/x/time
+  version: a4bde12657593d5e90d0533a3e4fd95e635124cb
+  subpackages:
+  - rate
+- name: google.golang.org/genproto
+  version: d80a6e20e776b0b17a324d0ba1ab50a39c8e8944
+  subpackages:
+  - googleapis/rpc/status
+- name: google.golang.org/grpc
+  version: d2e1b51f33ff8c5e4a15560ff049d200e83726c5
+  subpackages:
+  - codes
+  - credentials
+  - grpclb/grpc_lb_v1
+  - grpclog
+  - internal
+  - keepalive
+  - metadata
+  - naming
+  - peer
+  - stats
+  - status
+  - tap
+  - transport
+testImports: []

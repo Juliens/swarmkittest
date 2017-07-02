@@ -1,0 +1,114 @@
+package: gihub.com/juliens/swarmkittest
+import:
+- package: github.com/docker/swarmkit
+# grpc and protobuf
+- package: golang.org/x/crypto 
+  version: 3fbbcd23f1cb824e69491a5930cfeff09b12f4d2
+- package: google.golang.org/grpc
+  version: v1.3.0
+- package: github.com/gogo/protobuf
+  version: v0.4
+- package: github.com/golang/protobuf
+  version: 7a211bcf3bce0e3f1d74f9894916e6f116ae83b4
+- package: github.com/matttproud/golang_protobuf_extensions
+  version: v1.0.0
+- package: google.golang.org/genproto
+  version: d80a6e20e776b0b17a324d0ba1ab50a39c8e8944
+
+# metrics
+- package: github.com/grpc-ecosystem/go-grpc-prometheus
+  version: 6b7015e65d366bf3f19b2b2a000a831940f0f7e0
+- package: github.com/docker/go-metrics
+  version: d466d4f6fd960e01820085bd7e1a24426ee7ef18
+
+# etcd/raft
+- package: github.com/coreos/etcd
+  version: ea5389a79f40206170582c1ea076191b8622cb8e  # for https://github.com/coreos/etcd/pull/7830
+  repo: https://github.com/aaronlehmann/etcd
+- package: github.com/coreos/go-systemd
+  version: v12
+- package: github.com/coreos/pkg
+  version: v3
+- package: github.com/prometheus/client_golang
+  version: 52437c81da6b127a9925d17eb3a382a2e5fd395e
+- package: github.com/prometheus/client_model
+  version: fa8ad6fec33561be4280a8f0514318c79d7f6cb6
+- package: github.com/prometheus/common
+  version: ebdfc6da46522d58825777cf1f90490a5b1ef1d8
+- package: github.com/prometheus/procfs
+  version: abf152e5f3e97f2fafac028d2cc06c1feb87ffa5
+
+- package: github.com/docker/distribution
+  version: b38e5838b7b2f2ad48e06ec4b500011976080621
+- package: github.com/docker/docker
+  version: 77c9728847358a3ed3581d828fb0753017e1afd3
+- package: github.com/docker/go-connections
+  version: 34b5052da6b11e27f5f2e357b38b571ddddd3928
+- package: github.com/docker/go-events
+  version: 37d35add5005832485c0225ec870121b78fcff1c
+- package: github.com/docker/go-units
+  version: 954fed01cc617c55d838fa2230073f2cb17386c8
+- package: github.com/docker/libkv
+  version: 9fd56606e928ff1f309808f5d5a0b7a2ef73f9a8
+- package: github.com/docker/libnetwork
+  version: 37e20af882e13dd01ade3658b7aabdae3412118b
+- package: github.com/docker/libtrust
+  version: 9cbd2a1374f46905c68a4eb3694a130610adc62a
+- package: github.com/opencontainers/runc
+  version: b6b70e53451794e8333e9b602cc096b47a20bd0f
+- package: github.com/opencontainers/go-digest
+  version: a6d0ee40d4207ea02364bd3b9e8e77b9159ba1eb
+- package: github.com/opencontainers/image-spec
+  version: f03dbe35d449c54915d235f1a3cf8f585a24babe
+
+
+- package: github.com/davecgh/go-spew
+  version: 5215b55f46b2b919f50a1df0eaa5886afe4e3b3d
+- package: github.com/Microsoft/go-winio
+  version: f778f05015353be65d242f3fedc18695756153bb
+- package: github.com/Sirupsen/logrus
+  version: v0.11.0
+- package: github.com/beorn7/perks
+  version: 4c0e84591b9aa9e6dcfdf3e020114cd81f89d5f9
+- package: github.com/boltdb/bolt
+  version: e72f08ddb5a52992c0a44c7dda9316c7333938b2
+- package: github.com/cloudflare/cfssl
+  version: 7fb22c8cba7ecaf98e4082d22d65800cf45e042a
+- package: github.com/dustin/go-humanize
+  version: 8929fe90cee4b2cb9deb468b51fb34eba64d1bf0
+- package: github.com/google/certificate-transparency
+  version: 0f6e3d1d1ba4d03fdaab7cd716f36255c2e48341
+- package: github.com/hashicorp/go-immutable-radix
+  version: 8e8ed81f8f0bf1bdd829593fdd5c29922c1ea990
+- package: github.com/hashicorp/go-memdb
+  version: cb9a474f84cc5e41b273b20c6927680b2a8776ad
+- package: github.com/hashicorp/golang-lru
+  version: a0d98a5f288019575c6d1f4bb1573fef2d1fcdc4
+- package: github.com/inconshreveable/mousetrap
+  version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
+- package: github.com/phayes/permbits
+  version: f7e3ac5e859d0b919c5068d581cc4c5d4f4f9bc5
+- package: github.com/pivotal-golang/clock
+  version: 3fd3c1944c59d9742e1cd333672181cd1a6f9fa0
+- package: github.com/pkg/errors
+  version: 01fa4104b9c248c8945d14d9f128454d5b28d595
+- package: github.com/pmezard/go-difflib
+  version: 792786c7400a136282c1664665ae0a8db921c6c2
+- package: github.com/rcrowley/go-metrics
+  version: 51425a2415d21afadfd55cd93432c0bc69e9598d
+- package: github.com/spf13/cobra
+  version: 8e91712f174ced10270cf66615e0a9127e7c4de5
+- package: github.com/spf13/pflag
+  version: 7f60f83a2c81bc3c3c0d5297f61ddfa68da9d3b7
+- package: github.com/stretchr/testify
+  version: v1.1.4
+- package: golang.org/x/crypto
+  version: 3fbbcd23f1cb824e69491a5930cfeff09b12f4d2
+- package: golang.org/x/net
+  version: 7dcfb8076726a3fdd9353b6b8a1f1b6be6811bd6
+- package: golang.org/x/sys
+  version: 5eaf0df67e70d6997a9fe0ed24383fa1b01638d3
+- package: golang.org/x/text
+  version: f72d8390a633d5dfb0cc84043294db9f6c935756
+- package: golang.org/x/time
+  version: a4bde12657593d5e90d0533a3e4fd95e635124cb
